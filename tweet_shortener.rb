@@ -16,12 +16,14 @@ def word_substituter(tweet)
   words = tweet.split(" ")
 
   modified = words.map do |word|
-    downcase = word.downcase
+    # downcase = word.downcase
     dictionary.keys.include?(word) ? dictionary[word] : word
   end
 
   return modified.join(" ")
 end
+
+p word_substituter("I'm running out of example tweets for you guys, which is weird, because I'm a writer and this is just writing and I tweet all day. For real, you guys. For real.")
 
 
 def bulk_tweet_shortener(array_of_tweets)
