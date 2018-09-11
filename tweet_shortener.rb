@@ -24,9 +24,6 @@ def word_substituter(tweet)
   return modified.join(" ")
 end
 
-# p word_substituter("I'm running out of example tweets for you guys, which is weird, because I'm a writer and this is just writing and I tweet all day. For real, you guys. For real.")
-
-
 def bulk_tweet_shortener(array_of_tweets)
   array_of_tweets.each {|tweet| puts word_substituter(tweet)}
 end
